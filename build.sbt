@@ -10,5 +10,9 @@ lazy val root = (project in file("."))
       "org.scalatest" %% "scalatest" % "3.0.5",
       "org.typelevel" %% "cats-effect" % "1.2.0",
       "org.typelevel" %% "cats-core" % "1.6.0"
+    ),
+    scalacOptions ++= Seq(
+      "-language:higherKinds",
+      "-language:postfixOps"
     )
   )
